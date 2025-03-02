@@ -116,17 +116,34 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        display: block;
+        overflow: hidden;
+        
+      }
+     
+        ul {
+        list-style-type: none;
+        margin: 0;
         background-color: gray;
+          float: left;
+          overflow: hidden;
+      }
+      
+      li {
+        float: left;
+        background-color: gray;
+      }
+      
+      li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      text-decoration: none;
+        
       }
       
       a:hover {
         background-color: darkgray;
-      }
-      
-      li {
-        display: inline;
-        padding: 0px 20px 0px 20px;
       }
       
     </style>
@@ -138,11 +155,12 @@
       <div id="header">
         <h1>Yoko's Kitchen</h1>
         <div id="nav">
+          <ul>
           <li><a href="/">Home</a></li>
            <li><a href="/">Classes</a></li>
            <li><a href="/">Catering</a></li>
            <li><a href="/">About</a></li>
-            
+            </ul>
           <!--
                     Instructions: Add a list using the <ul> element and the <li> element to create a link for each menu item. Set the href value to empty. Normally you would put the relative path of page you are linking to, but we are creating a placeholder.
                     -->
@@ -178,13 +196,13 @@
       
       <div id="sidebar">
         <div class="popular-recipes">
-          <ul>
+          <ol>
           <h2>Popular Recipes</h2>
           Yakitori (grilled chicken)<br>
           Tsukune (minced chicken patties)<br>
           Okonomiyaki (savory pancakes)<br>
           Mizutaki (chicken stew)<br>
-              </ul>
+              </ol>
         </div>
         <div class="contact-details">
           <h2>Contact</h2>
